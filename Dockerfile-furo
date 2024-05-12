@@ -1,4 +1,4 @@
-FROM sphinx-dev
+FROM kjuly/sphinx:latest
 
 LABEL org.opencontainers.image.authors="dev@kjuly.com" \
       org.opencontainers.image.licenses=MIT \
