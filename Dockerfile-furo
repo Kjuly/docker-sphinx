@@ -1,0 +1,9 @@
+FROM sphinx-dev
+
+LABEL org.opencontainers.image.authors="dev@kjuly.com" \
+      org.opencontainers.image.licenses=MIT \
+      org.opencontainers.image.source=https://github.com/Kjuly/docker-sphinx \
+      org.opencontainers.image.description="A Docker image for Sphinx with furo theme."
+
+RUN pip install --upgrade furo myst-parser sphinx-design && \
+    pip cache purge
